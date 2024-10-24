@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agence de location de voitures</title>
+    <link rel="import" href="components/Header.html" />
+    <link rel="stylesheet" href="../../style/global.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>TESLA_ALVT</h1>
+        <span>Agence de location de Voitures électrique</span>
+      </div>
+    </header>
+    <div>
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        autoplay
+        loop
+        muted
+        playsinline
+        src="../../public/abF0uRhidP4hdUBc2Jmir_desktop.mp4"
+      >
+        <source src="/abF0uRhidP4hdUBc2Jmir_desktop.mp4" type="video/mp4" />
+      </video>
+      <div class="welcome-container">
+        <h1 class="backdrop-blur-lg">
+          Bienvenue Dans La premiére agence de location de voiture électrique en
+          Tunisie
+        </h1>
+        <span class="text-sm"
+          >Bienvenue chez TESLA_ALVT, votre partenaire de confiance pour tous
+          vos besoins en location de véhicules. Notre agence met à votre
+          disposition une large gamme de véhicules récents et soigneusement
+          entretenus pour répondre à toutes vos exigences.</span
+        >
+        <a href="../authentication/register/index.html" class="button text-lg"
+          >Commencer à louer
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  header {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    backdrop-filter: blur(12px);
+    background-color: rgba(0, 0, 0, 0.329);
+    color: white;
+  }
+  header > div {
+    display: flex;
+    align-items: end;
+  }
+  header > div > span {
+    font-size: small;
+  }
+
+  video {
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -200;
+    height: 100vh;
+  }
+  body > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .welcome-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    text-align: center;
+  }
+  .welcome-container > span {
+    width: 400px;
+  }
+
+  .welcome-container > h1 {
+    background-color: rgba(255, 255, 255, 0.295);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  /*for small devices*/
+  @media (width < 650px) {
+    .welcome-container > span {
+      width: auto;
+    }
+    header > div {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+</style>

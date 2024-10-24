@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+    <link rel="stylesheet" href="../../../style/global.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--left side-->
+      <div class="left-side">
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          src="../../../public/Demo-Drive-Kiosk-FSD-No-Text.mp4"
+        >
+          <source src="/Demo-Drive-Kiosk-FSD-No-Text.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <!--right side-->
+      <div class="right-side">
+        <div class="top">
+          <h1 class="text-2xl font-semibold">Full Self-Driving (Supervised)</h1>
+          <p class="text-md">
+            Vous pourrez expérimenter la conduite entièrement autonome
+            (supervisée). Sous votre supervision, le véhicule Tesla naviguera
+            automatiquement dans les virages, les intersections et plus encore
+            le long de votre itinéraire. Un conseiller Tesla peut vous aider à
+            vous installer et vous accompagner pendant le trajet sur demande.
+          </p>
+        </div>
+        <div class="formulaire">
+          <legend class="text-2xl">Login</legend>
+          <hr />
+          <form action="">
+            <div>
+              <label for="">Mail</label>
+              <input type="email" class="input" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  hr {
+    border-color: rgba(128, 128, 128, 0.151);
+    outline: none;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  .container > .left-side {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .left-side > video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .container > .right-side {
+    width: 50%;
+    min-height: 100vh;
+    padding: 0 20px;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+  .formulaire {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+</style>
