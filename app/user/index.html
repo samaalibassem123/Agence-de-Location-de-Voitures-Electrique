@@ -23,6 +23,76 @@
         </button>
       </div>
     </header>
+    <main>
+      <h4 style="text-align: center">
+        La premiere Agence de location de voiture électique en Tunisie Vous
+        represente Leur gamme
+      </h4>
+      <div
+        class="cards drop-shadow-lg shadow-md"
+        onmouseenter="document.getElementById('prix').style.display='flex'"
+        onmouseleave="document.getElementById('prix').style.display='none'"
+      >
+        <h1>Model Y</h1>
+        <img src="../../public/Homepage-Model-Y-Desktop-US-v2.avif" alt="" />
+        <div class="prix-container" id="prix">
+          <a href="" class="button">Louer</a>
+          <h2>Avec 999 DT</h2>
+        </div>
+      </div>
+
+      <div
+        class="cards drop-shadow-lg shadow-md"
+        onmouseenter="document.getElementById('prix2').style.display='flex'"
+        onmouseleave="document.getElementById('prix2').style.display='none'"
+      >
+        <h1>Model X</h1>
+        <img src="../../public/Homepage-Model-X-Desktop-US.avif" alt="" />
+        <div class="prix-container" id="prix2">
+          <a href="" class="button">Louer</a>
+          <h2>Avec 1200 DT</h2>
+        </div>
+      </div>
+
+      <div
+        class="cards drop-shadow-lg shadow-md"
+        onmouseenter="document.getElementById('prix3').style.display='flex'"
+        onmouseleave="document.getElementById('prix3').style.display='none'"
+      >
+        <h1>Model S</h1>
+        <img src="../../public/Homepage-Model-S-Desktop-US.avif" alt="" />
+        <div class="prix-container" id="prix3">
+          <a href="" class="button">Louer</a>
+          <h2>Avec 1500 DT</h2>
+        </div>
+      </div>
+
+      <div
+        class="cards drop-shadow-lg shadow-md"
+        onmouseenter="document.getElementById('prix4').style.display='flex'"
+        onmouseleave="document.getElementById('prix4').style.display='none'"
+      >
+        <h1>Model 3</h1>
+        <img src="../../public/Homepage-Model-3-Desktop-US.avif" alt="" />
+        <div class="prix-container" id="prix4">
+          <a href="" class="button">Louer</a>
+          <h2>Avec 1999 DT</h2>
+        </div>
+      </div>
+
+      <div
+        class="cards drop-shadow-lg shadow-md"
+        onmouseenter="document.getElementById('prix6').style.display='flex'"
+        onmouseleave="document.getElementById('prix6').style.display='none'"
+      >
+        <h1>Cybertruck</h1>
+        <img src="../../public/Homepage-Cybertruck-Desktop-v3.avif" alt="" />
+        <div class="prix-container" id="prix6">
+          <a href="" class="button">Louer</a>
+          <h2>Avec 2999 DT</h2>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
 <style>
@@ -49,6 +119,67 @@
     background-color: gainsboro;
     padding: 10px 15px;
     border-radius: 100%;
+  }
+
+  /*handle car cards*/
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease-in-out;
+    transition-duration: 0.5s;
+    position: relative;
+    filter: grayscale(100%);
+  }
+  .cards > .prix-container {
+    display: none;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+  }
+  .cards > .prix-container > a {
+    width: 100%;
+    text-align: center;
+    font-size: large;
+  }
+  .cards > .prix-container > h2 {
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  .cards > h1 {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+  }
+  .cards > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -200;
+  }
+  .cards:hover {
+    height: 550px;
+    filter: grayscale(0);
   }
   /*for small devices*/
   @media (width < 650px) {
