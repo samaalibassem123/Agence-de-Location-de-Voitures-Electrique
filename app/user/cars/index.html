@@ -30,16 +30,25 @@
             <span>0-60 mph</span>
           </div>
         </div>
+        <div class="jour">
+          <div>
+            <span:>Nombre de Jour:</span>
+            <input type="number" class="input" placeholder="nombre de jour pour le louer"  id="jour" oninput="CalcPrix()" />
+          </div>
+        </div>
         <div class="prix-container">
           <span id="carPrix"></span>
-          <button class="button">Louer Maintenant</button>
+          <button class="button" onclick="HandleSubmit()">Louer Maintenant</button>
         </div>
       </nav>
+      
     </main>
+
   </body>
 </html>
 
 <style>
+  
   .container {
     display: flex;
     flex-direction: row;
@@ -61,6 +70,12 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
+  }
+  .jour {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 2;
   }
 
   nav > h1 {
@@ -92,6 +107,9 @@
     padding: 20px;
     font-size: large;
   }
+
+
+
   /*design for small devices*/
   @media (width < 1200px) {
     .container {
@@ -107,6 +125,9 @@
       width: 100%;
       min-height: 100svh;
       padding: 0;
+    }
+    .date {
+      flex-direction: row;
     }
   }
 </style>
@@ -126,5 +147,25 @@
     document.getElementById("carOut").innerHTML = vitout;
     document.getElementById("carPrix").innerHTML = prix + "DT/par jour";
     document.getElementById("ModelImg").src = "../../../public/" + modelimg;
+  }
+  function CalcPrix() {
+    const Jour = document.getElementById('jour').value;
+    const Prix = GetParams("prix")
+    if(Jour > 10 ){
+      return alert("Imposible de louer une voiture plus que 10 jour")
+    }
+    let Res = Jour * Prix
+    if( Jour === ""){
+      document.getElementById("carPrix").innerHTML = Prix + "DT/par jour";
+    }else{
+      document.getElementById("carPrix").innerHTML = Res +" DT / Par "+Jour +" jour"
+    }
+  }
+  function HandleSubmit(){
+    const Jour = document.getElementById('jour').value;
+    if(Jour < 10 && Jour > 0){
+      alert("Your Request Has Been Submitted We will Call you on your number to comfirm it !");
+    }
+   
   }
 </script>

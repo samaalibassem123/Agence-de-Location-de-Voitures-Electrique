@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../style/global.css" />
   </head>
   <body>
-    <header class="drop-shadow-md backdrop-blur-md shadow-md">
+    <header class="drop-shadow-md backdrop-blur-lg shadow-md">
       <div>
         <p class="text-2xl">TESLA_ALVT</p>
         <span>Agence de location de Voitures électrique</span>
@@ -120,7 +120,11 @@
     padding: 20px;
     color: black;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 200;
   }
   header > div {
     display: flex;
