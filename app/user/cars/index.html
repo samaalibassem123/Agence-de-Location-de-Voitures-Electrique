@@ -48,7 +48,6 @@
                 type="number"
                 class="input"
                 placeholder="1234 1234 1234 1234"
-                oninput="CalcPrix()"
               />
               <img
                 src="/public/Capture d'écran 2024-10-28 200255.png"
@@ -56,14 +55,10 @@
                 width="150px"
               />
             </div>
-
+            <input type="number" class="input" placeholder="MM / AA" />
+            <input type="number" class="input" placeholder="CVC" />
             <span>Nom du titulaire de la carte :</span>
-            <input
-              type="text"
-              class="input"
-              placeholder="Nom complet"
-              oninput="CalcPrix()"
-            />
+            <input type="text" class="input" placeholder="Nom complet" />
           </div>
         </div>
         <div class="prix-container">
@@ -207,7 +202,9 @@
     const Jour = document.getElementById("jour").value;
     const Prix = GetParams("prix");
     if (Jour > 10) {
-      return alert("Imposible de louer une voiture plus que 10 jour");
+      alert("Imposible de louer une voiture plus que 10 jour");
+      document.getElementById("jour").value = "";
+      return;
     }
     let Res = Jour * Prix;
     if (Jour === "") {
