@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CarModel</title>
     <script src="../../../JavaScript/GetParams.js"></script>
     <link rel="stylesheet" href="../../../style/global.css" />
   </head>
@@ -30,25 +30,54 @@
             <span>0-60 mph</span>
           </div>
         </div>
-        <div class="jour">
+        <div class="formulaire">
           <div>
-            <span:>Nombre de Jour:</span>
-            <input type="number" class="input" placeholder="nombre de jour pour le louer"  id="jour" oninput="CalcPrix()" />
+            <span>Nombre de Jour:</span>
+            <input
+              type="number"
+              class="input"
+              placeholder="nombre de jour pour le louer"
+              id="jour"
+              oninput="CalcPrix()"
+            />
+          </div>
+          <div class="payment-info">
+            <span>information de carte:</span>
+            <div>
+              <input
+                type="number"
+                class="input"
+                placeholder="1234 1234 1234 1234"
+                oninput="CalcPrix()"
+              />
+              <img
+                src="/public/Capture d'écran 2024-10-28 200255.png"
+                alt=""
+                width="150px"
+              />
+            </div>
+
+            <span>Nom du titulaire de la carte :</span>
+            <input
+              type="text"
+              class="input"
+              placeholder="Nom complet"
+              oninput="CalcPrix()"
+            />
           </div>
         </div>
         <div class="prix-container">
           <span id="carPrix"></span>
-          <button class="button" onclick="HandleSubmit()">Louer Maintenant</button>
+          <button class="button" onclick="HandleSubmit()">
+            Louer Maintenant
+          </button>
         </div>
       </nav>
-      
     </main>
-
   </body>
 </html>
 
 <style>
-  
   .container {
     display: flex;
     flex-direction: row;
@@ -70,12 +99,6 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
-  }
-  .jour {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    line-height: 2;
   }
 
   nav > h1 {
@@ -108,7 +131,43 @@
     font-size: large;
   }
 
+  .formulaire {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+    line-height: 2;
+  }
+  .formulaire > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .payment-info {
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
+  .payment-info > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .payment-info > div > input {
+    outline: none;
+  }
+  .payment-info > div > img {
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+    top: 0;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+  }
 
   /*design for small devices*/
   @media (width < 1200px) {
@@ -118,16 +177,12 @@
     .container > .img-container {
       width: 100%;
       min-height: 400px;
-
       top: 0;
     }
     nav {
       width: 100%;
       min-height: 100svh;
       padding: 0;
-    }
-    .date {
-      flex-direction: row;
     }
   }
 </style>
@@ -149,23 +204,25 @@
     document.getElementById("ModelImg").src = "../../../public/" + modelimg;
   }
   function CalcPrix() {
-    const Jour = document.getElementById('jour').value;
-    const Prix = GetParams("prix")
-    if(Jour > 10 ){
-      return alert("Imposible de louer une voiture plus que 10 jour")
+    const Jour = document.getElementById("jour").value;
+    const Prix = GetParams("prix");
+    if (Jour > 10) {
+      return alert("Imposible de louer une voiture plus que 10 jour");
     }
-    let Res = Jour * Prix
-    if( Jour === ""){
+    let Res = Jour * Prix;
+    if (Jour === "") {
       document.getElementById("carPrix").innerHTML = Prix + "DT/par jour";
-    }else{
-      document.getElementById("carPrix").innerHTML = Res +" DT / Par "+Jour +" jour"
+    } else {
+      document.getElementById("carPrix").innerHTML =
+        Res + " DT / Par " + Jour + " jour";
     }
   }
-  function HandleSubmit(){
-    const Jour = document.getElementById('jour').value;
-    if(Jour < 10 && Jour > 0){
-      alert("Your Request Has Been Submitted We will Call you on your number to comfirm it !");
+  function HandleSubmit() {
+    const Jour = document.getElementById("jour").value;
+    if (Jour < 10 && Jour > 0) {
+      alert(
+        "Your Request Has Been Submitted We will Call you on your number to comfirm it !"
+      );
     }
-   
   }
 </script>
