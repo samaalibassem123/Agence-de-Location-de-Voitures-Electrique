@@ -116,35 +116,6 @@
   </body>
 </html>
 <style>
-  header {
-    padding: 20px;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 200;
-  }
-  header > div {
-    display: flex;
-    align-items: end;
-  }
-  header > div > span {
-    font-size: small;
-  }
-  .user-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-  }
-  .user-menu > div {
-    background-color: gainsboro;
-    padding: 10px 15px;
-    border-radius: 100%;
-  }
-
   /*handle car cards*/
   main {
     padding: 20px;
@@ -204,16 +175,5 @@
   .cards:hover {
     height: 550px;
     filter: grayscale(0);
-  }
-  /*for small devices*/
-  @media (width < 650px) {
-    header > div {
-      flex-direction: column;
-      align-items: start;
-    }
-    span {
-      visibility: hidden;
-      display: none;
-    }
   }
 </style>
