@@ -7,23 +7,23 @@
     <title>Clients</title>
   </head>
   <body>
+    <header class="drop-shadow-md backdrop-blur-lg shadow-md">
+      <div>
+        <p class="text-2xl">TESLA_ALVT</p>
+        <span>Agence de location de Voitures électrique</span>
+      </div>
+      <div class="user-menu">
+        <span>TestName testFamilyname</span>
+        <div>A</div>
+        <button
+          class="button"
+          style="border: none; background-color: black; color: white"
+        >
+          Logout
+        </button>
+      </div>
+    </header>
     <main>
-      <header class="drop-shadow-md backdrop-blur-lg shadow-md">
-        <div>
-          <p class="text-2xl">TESLA_ALVT</p>
-          <span>Agence de location de Voitures électrique</span>
-        </div>
-        <div class="user-menu">
-          <span>TestName testFamilyname</span>
-          <div>A</div>
-          <button
-            class="button"
-            style="border: none; background-color: black; color: white"
-          >
-            Logout
-          </button>
-        </div>
-      </header>
       <nav class="drop-shadow-lg">
         <a href="/app/admin/index.html">
           <svg
@@ -114,18 +114,75 @@
           <span>Reservations</span>
         </a>
       </nav>
+      <section>
+        <table class="tb">
+          <tr>
+            <th>Client_Mail</th>
+            <th>Client_Name</th>
+            <th>Client_Tel</th>
+          </tr>
+          <tr>
+            <td>exp1</td>
+            <td>exp1</td>
+            <td>exp1</td>
+            <td>
+              <button class="delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>exp1</td>
+            <td>exp1</td>
+            <td>exp1</td>
+            <td>
+              <button class="delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>exp1</td>
+            <td>exp1</td>
+            <td>exp1</td>
+            <td>
+              <button class="delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>exp1</td>
+            <td>exp1</td>
+            <td>exp1</td>
+            <td>
+              <button class="delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>exp1</td>
+            <td>exp1</td>
+            <td>exp1</td>
+            <td>
+              <button class="delete">Delete</button>
+            </td>
+          </tr>
+        </table>
+      </section>
     </main>
   </body>
 </html>
 
 <style>
+  main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+    gap: 10px;
+  }
+
+  /*nav style*/
   nav {
     width: 10%;
-    min-height: 100svh;
+    height: 100vh;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
       0 4px 6px -4px rgb(0 0 0 / 0.1);
     padding: 20px;
-    position: fixed;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -150,6 +207,28 @@
   a:hover {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
       0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+
+  /*section style*/
+  section {
+    padding: 20px;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  button {
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: medium;
+  }
+  .delete {
+    background-color: rgba(238, 74, 74, 0.493);
+  }
+  .update {
+    background-color: rgba(73, 133, 243, 0.486);
   }
 
   @media (width < 1500px) {
