@@ -146,7 +146,10 @@
             <input type="text" class="input" placeholder="9999" />
           </div>
           <div class="submit-container">
-            <input type="submit" class="shadow-md text-md font-semibold" />
+            <input
+              type="submit"
+              class="shadow-md text-md font-semibold button"
+            />
           </div>
         </form>
         <div class="table-container">
@@ -170,8 +173,8 @@
               <td>exp1</td>
               <td>exp1</td>
               <td>
-                <button class="delete">Delete</button>
-                <button class="update">Update</button>
+                <button class="button delete">Delete</button>
+                <button class="button update">Update</button>
               </td>
             </tr>
             <tr>
@@ -183,8 +186,8 @@
               <td>exp1</td>
               <td>exp1</td>
               <td>
-                <button class="delete">Delete</button>
-                <button class="update">Update</button>
+                <button class="button delete">Delete</button>
+                <button class="button update">Update</button>
               </td>
             </tr>
             <tr>
@@ -196,8 +199,8 @@
               <td>exp1</td>
               <td>exp1</td>
               <td>
-                <button class="delete">Delete</button>
-                <button class="update">Update</button>
+                <button class="button delete">Delete</button>
+                <button class="button update">Update</button>
               </td>
             </tr>
             <tr>
@@ -209,8 +212,8 @@
               <td>exp1</td>
               <td>exp1</td>
               <td>
-                <button class="delete">Delete</button>
-                <button class="update">Update</button>
+                <button class="button delete">Delete</button>
+                <button class="button update">Update</button>
               </td>
             </tr>
             <tr>
@@ -222,8 +225,8 @@
               <td>exp1</td>
               <td>exp1</td>
               <td>
-                <button class="delete">Delete</button>
-                <button class="update">Update</button>
+                <button class="button delete">Delete</button>
+                <button class="button update">Update</button>
               </td>
             </tr>
           </table>
@@ -256,21 +259,6 @@
     overflow-x: scroll;
   }
 
-  button {
-    padding: 10px;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: medium;
-  }
-  .delete {
-    background-color: rgba(238, 74, 74, 0.493);
-  }
-  .update {
-    background-color: rgba(73, 133, 243, 0.486);
-  }
-
   /*form style*/
   form {
     display: flex;
@@ -288,12 +276,7 @@
   }
 
   input[type="submit"] {
-    padding: 10px;
-    color: white;
-    background-color: black;
-    outline: none;
-    border: none;
-    border-radius: 10px;
+    border: 1px rgba(0, 0, 0, 0.171) solid;
   }
 
   .submit-container {
