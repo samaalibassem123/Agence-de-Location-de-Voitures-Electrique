@@ -24,7 +24,7 @@
       </div>
     </header>
     <main>
-      <nav class="drop-shadow-lg">
+      <nav class="nav drop-shadow-lg">
         <a href="/app/admin/index.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -115,6 +115,38 @@
         </a>
       </nav>
       <section>
+        <!--Add a car to database-->
+        <form action="">
+          <div>
+            <label>Car_Mat</label>
+            <input type="text" class="input" />
+          </div>
+          <div>
+            <label>CarName</label>
+            <input type="text" class="input" />
+          </div>
+          <div>
+            <label>Car_Img</label>
+            <input type="text" class="input" />
+          </div>
+          <div>
+            <label>Car_Model_Img</label>
+            <input type="text" class="input" />
+          </div>
+          <div>
+            <label>Car_top_speed</label>
+            <input type="text" class="input" />
+          </div>
+          <div>
+            <label>Car_Range</label>
+            <input type="text" class="input" />
+          </div>
+          <div>
+            <label>Car_vitout</label>
+            <input type="text" class="input" />
+          </div>
+          <input type="submit" />
+        </form>
         <table class="tb">
           <tr>
             <th>Car_Mat</th>
@@ -125,6 +157,7 @@
             <th>Car_Range</th>
             <th>Car_vitout</th>
           </tr>
+
           <tr>
             <td>exp1</td>
             <td>exp1</td>
@@ -205,39 +238,6 @@
     gap: 10px;
   }
 
-  /*nav style*/
-  nav {
-    width: 10%;
-    height: 100vh;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-      0 4px 6px -4px rgb(0 0 0 / 0.1);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    align-items: center;
-  }
-  a {
-    color: black;
-    display: flex;
-    width: 100%;
-    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    padding: 20px;
-    align-items: center;
-    text-decoration: none;
-    gap: 10px;
-
-    transition: all 0.2s ease-in-out;
-    font-size: large;
-    border: 1px solid rgba(0, 0, 0, 0.075);
-    border-left: none;
-    border-right: none;
-  }
-  a:hover {
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-      0 4px 6px -4px rgb(0 0 0 / 0.1);
-  }
-
   /*section style*/
   section {
     padding: 20px;
@@ -258,6 +258,22 @@
   }
   .update {
     background-color: rgba(73, 133, 243, 0.486);
+  }
+
+  /*form style*/
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+  }
+  form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
   }
 
   @media (width < 1500px) {
