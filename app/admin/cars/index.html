@@ -119,41 +119,43 @@
         <form action="">
           <div>
             <label>Car_Mat</label>
-            <input type="text" class="input" />
+            <input type="text" class="input" placeholder="0000000000" />
           </div>
           <div>
             <label>CarName</label>
-            <input type="text" class="input" />
+            <input type="text" class="input" placeholder="example_name" />
           </div>
           <div>
-            <label>Car_Img</label>
-            <input type="text" class="input" />
+            <label>Car_Img_Url</label>
+            <input type="text" class="input" placeholder="XX/XXXXX" />
           </div>
           <div>
-            <label>Car_Model_Img</label>
-            <input type="text" class="input" />
+            <label>Car_Model_Img_Url</label>
+            <input type="text" class="input" placeholder="XX/XXXXX" />
           </div>
           <div>
             <label>Car_top_speed</label>
-            <input type="text" class="input" />
+            <input type="text" class="input" placeholder="9999" />
           </div>
           <div>
             <label>Car_Range</label>
-            <input type="text" class="input" />
+            <input type="text" class="input" placeholder="9999" />
           </div>
           <div>
             <label>Car_vitout</label>
-            <input type="text" class="input" />
+            <input type="text" class="input" placeholder="9999" />
           </div>
-          <input type="submit" />
+          <div class="submit-container">
+            <input type="submit" class="shadow-md text-md font-semibold" />
+          </div>
         </form>
         <div class="table-container">
           <table class="tb">
             <tr>
               <th>Car_Mat</th>
               <th>CarName</th>
-              <th>Car_Img</th>
-              <th>Car_Model_Img</th>
+              <th>Car_Img_Url</th>
+              <th>Car_Model_Img_Url</th>
               <th>Car_top_speed</th>
               <th>Car_Range</th>
               <th>Car_vitout</th>
@@ -287,8 +289,16 @@
 
   input[type="submit"] {
     padding: 10px;
+    color: white;
+    background-color: black;
+    outline: none;
+    border: none;
+    border-radius: 10px;
   }
 
+  .submit-container {
+    text-align: end;
+  }
   @media (width < 1500px) {
     a > span {
       display: none;
