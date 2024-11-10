@@ -147,83 +147,85 @@
           </div>
           <input type="submit" />
         </form>
-        <table class="tb">
-          <tr>
-            <th>Car_Mat</th>
-            <th>CarName</th>
-            <th>Car_Img</th>
-            <th>Car_Model_Img</th>
-            <th>Car_top_speed</th>
-            <th>Car_Range</th>
-            <th>Car_vitout</th>
-          </tr>
+        <div class="table-container">
+          <table class="tb">
+            <tr>
+              <th>Car_Mat</th>
+              <th>CarName</th>
+              <th>Car_Img</th>
+              <th>Car_Model_Img</th>
+              <th>Car_top_speed</th>
+              <th>Car_Range</th>
+              <th>Car_vitout</th>
+            </tr>
 
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>
-              <button class="delete">Delete</button>
-              <button class="update">Update</button>
-            </td>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>
-              <button class="delete">Delete</button>
-              <button class="update">Update</button>
-            </td>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>
-              <button class="delete">Delete</button>
-              <button class="update">Update</button>
-            </td>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>
-              <button class="delete">Delete</button>
-              <button class="update">Update</button>
-            </td>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>
-              <button class="delete">Delete</button>
-              <button class="update">Update</button>
-            </td>
-          </tr>
-        </table>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>
+                <button class="delete">Delete</button>
+                <button class="update">Update</button>
+              </td>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>
+                <button class="delete">Delete</button>
+                <button class="update">Update</button>
+              </td>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>
+                <button class="delete">Delete</button>
+                <button class="update">Update</button>
+              </td>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>
+                <button class="delete">Delete</button>
+                <button class="update">Update</button>
+              </td>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>
+                <button class="delete">Delete</button>
+                <button class="update">Update</button>
+              </td>
+            </tr>
+          </table>
+        </div>
       </section>
     </main>
   </body>
@@ -240,6 +242,13 @@
 
   /*section style*/
   section {
+    padding: 20px;
+    width: 100%;
+
+    overflow: hidden;
+  }
+
+  .table-container {
     padding: 20px;
     width: 100%;
     overflow-x: scroll;
@@ -274,6 +283,10 @@
     flex-direction: column;
     gap: 10px;
     margin: 10px;
+  }
+
+  input[type="submit"] {
+    padding: 10px;
   }
 
   @media (width < 1500px) {
