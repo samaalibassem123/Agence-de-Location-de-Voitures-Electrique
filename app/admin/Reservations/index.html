@@ -87,6 +87,26 @@
           </svg>
           <span>Clients</span>
         </a>
+        <a href="/app/admin/Pending/index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-clock-alert"
+          >
+            <path d="M12 6v6l4 2" />
+            <path d="M16 21.16a10 10 0 1 1 5-13.516" />
+            <path d="M20 11.5v6" />
+            <path d="M20 21.5h.01" />
+          </svg>
+          <span>Liste D'attende</span>
+        </a>
         <a href="/app/admin/Reservations/index.html">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -114,14 +134,41 @@
           <span>Reservations</span>
         </a>
       </nav>
-
       <section class="drop-shadow-md">
+        <div class="search">
+          <label for="">Search By Car Name: </label>
+          <div>
+            <input
+              type="text"
+              placeholder="Search by car Name"
+              class="input"
+              style="width: 200px"
+            />
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-search"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+            </button>
+          </div>
+        </div>
         <div class="search">
           <label for="">Search By Client Mail: </label>
           <div>
             <input
               type="text"
-              placeholder="Search by car Name"
+              placeholder="Search by Client Name"
               class="input"
               style="width: 200px"
             />
@@ -153,17 +200,15 @@
             <th>End_Date</th>
             <th>nbjour</th>
             <th>prixTot</th>
-            <th>Reserv_Etat</th>
           </tr>
           <tr>
             <td>exp1</td>
             <td>exp1</td>
             <td>exp1</td>
-            <td><input type="date" class="input" /></td>
-            <td><input type="date" class="input" /></td>
+            <td>2024/03/05</td>
+            <td>2024/03/05</td>
             <td>exp1</td>
             <td>exp1</td>
-            <td class="text-sm"><span class="true">Reserver</span></td>
             <td>
               <button class="button delete">Delete</button>
               <button class="button update">Update</button>
@@ -173,11 +218,10 @@
             <td>exp1</td>
             <td>exp1</td>
             <td>exp1</td>
-            <td><input type="date" class="input" /></td>
-            <td><input type="date" class="input" /></td>
+            <td>2024/03/05</td>
+            <td>2024/03/05</td>
             <td>exp1</td>
             <td>exp1</td>
-            <td class="text-sm"><span class="true">Reserver</span></td>
             <td>
               <button class="button delete">Delete</button>
               <button class="button update">Update</button>
@@ -187,11 +231,10 @@
             <td>exp1</td>
             <td>exp1</td>
             <td>exp1</td>
-            <td><input type="date" class="input" value="2024-01-08" /></td>
-            <td><input type="date" class="input" value="2024-01-08" /></td>
+            <td>2024/03/05</td>
+            <td>2024/03/05</td>
             <td>exp1</td>
             <td>exp1</td>
-            <td class="text-sm"><span class="false">Fin Reserver</span></td>
             <td>
               <button class="button delete">Delete</button>
               <button class="button update">Update</button>
@@ -201,11 +244,10 @@
             <td>exp1</td>
             <td>exp1</td>
             <td>exp1</td>
-            <td><input type="date" class="input" value="2024-01-08" /></td>
-            <td><input type="date" class="input" value="2024-01-08" /></td>
+            <td>2024/03/05</td>
+            <td>2024/03/05</td>
             <td>exp1</td>
             <td>exp1</td>
-            <td class="text-sm"><span class="false">Fin Reserver</span></td>
             <td>
               <button class="button delete">Delete</button>
               <button class="button update">Update</button>
@@ -215,13 +257,10 @@
             <td>exp1</td>
             <td>exp1</td>
             <td>exp1</td>
-            <td><input type="date" class="input" value="2024-01-08" /></td>
-            <td>
-              <input type="date" class="input" value="2024-01-08" />
-            </td>
+            <td>2024/03/05</td>
+            <td>2024/03/05</td>
             <td>exp1</td>
             <td>exp1</td>
-            <td class="text-sm"><span class="false">Fin Reserver</span></td>
             <td>
               <button class="button delete">Delete</button>
               <button class="button update">Update</button>
@@ -247,19 +286,6 @@
     padding: 20px;
     width: 100%;
     overflow-x: scroll;
-  }
-
-  .true {
-    background-color: #57b610;
-    color: white;
-    padding: 5px;
-    border-radius: 8px;
-  }
-  .false {
-    background-color: #ef4444;
-    color: white;
-    padding: 5px;
-    border-radius: 8px;
   }
 
   @media (width < 1500px) {
