@@ -135,129 +135,159 @@
         </a>
       </nav>
       <section class="drop-shadow-md">
-        <table class="tb">
-          <tr>
-            <th>Client_Mail</th>
-            <th>Client_Name</th>
-            <th>Client_Tel</th>
-            <th>Car_Name</th>
-            <th>Nb_Jour</th>
-            <th>Resv_Date</th>
-            <th>Start Date</th>
-            <th>End_Date</th>
-            <th>Car_Mat</th>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>2024/2/3</td>
-            <td><input type="date" class="input" /></td>
-            <td><input type="date" class="input" /></td>
-            <td>
-              <select name="" id="" class="input">
-                <option value="">Choose an availble car</option>
-                <option value="">Mat48975re</option>
-                <option value="">Mat4689755e</option>
-                <option value="">Mat4897raezre</option>
-              </select>
-            </td>
-            <td>
-              <button class="button confirm">confirm</button>
-              <button class="button delete">Cancel</button>
-            </td>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>2024/2/3</td>
-            <td><input type="date" class="input" /></td>
-            <td><input type="date" class="input" /></td>
-            <td>
-              <select name="" id="" class="input">
-                <option value="">Choose an availble car</option>
-                <option value="">Mat48975re</option>
-                <option value="">Mat4689755e</option>
-                <option value="">Mat4897raezre</option>
-              </select>
-            </td>
-            <td>
-              <button class="button confirm">confirm</button>
-              <button class="button delete">cancel</button>
-            </td>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>2024/2/3</td>
-            <td><input type="date" class="input" /></td>
-            <td><input type="date" class="input" /></td>
-            <td>
-              <select name="" id="" class="input">
-                <option value="">Choose an availble car</option>
-                <option value="">Mat48975re</option>
-                <option value="">Mat4689755e</option>
-                <option value="">Mat4897raezre</option>
-              </select>
-            </td>
-            <td>
-              <button class="button confirm">confirm</button>
-              <button class="button delete">cancel</button>
-            </td>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>2024/2/3</td>
-            <td><input type="date" class="input" /></td>
-            <td><input type="date" class="input" /></td>
-            <td>
-              <select name="" id="" class="input">
-                <option value="">Choose an availble car</option>
-                <option value="">Mat48975re</option>
-                <option value="">Mat4689755e</option>
-                <option value="">Mat4897raezre</option>
-              </select>
-            </td>
-            <td>
-              <button class="button confirm">confirm</button>
-              <button class="button delete">cancel</button>
-            </td>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>2024/2/3</td>
-            <td><input type="date" class="input" /></td>
-            <td><input type="date" class="input" /></td>
-            <td>
-              <select name="" id="" class="input">
-                <option value="">Choose an availble car</option>
-                <option value="">Mat48975re</option>
-                <option value="">Mat4689755e</option>
-                <option value="">Mat4897raezre</option>
-              </select>
-            </td>
-            <td>
-              <button class="button confirm">confirm</button>
-              <button class="button delete">cancel</button>
-            </td>
-          </tr>
-        </table>
+        <div class="search">
+          <label for="">Search By Client Mail: </label>
+          <div>
+            <input
+              type="text"
+              placeholder="exmp@gmail.com"
+              class="input"
+              style="width: 200px"
+            />
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-search"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="tb">
+            <tr>
+              <th>Client_Mail</th>
+              <th>Client_Name</th>
+              <th>Client_Tel</th>
+              <th>Car_Name</th>
+              <th>Nb_Jour</th>
+              <th>Resv_Date</th>
+              <th>Start Date</th>
+              <th>End_Date</th>
+              <th>Car_Mat</th>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>2024/2/3</td>
+              <td><input type="date" class="input" /></td>
+              <td><input type="date" class="input" /></td>
+              <td>
+                <select name="" id="" class="input">
+                  <option value="">Choose an availble car</option>
+                  <option value="">Mat48975re</option>
+                  <option value="">Mat4689755e</option>
+                  <option value="">Mat4897raezre</option>
+                </select>
+              </td>
+              <td>
+                <button class="button confirm">confirm</button>
+                <button class="button delete">Cancel</button>
+              </td>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>2024/2/3</td>
+              <td><input type="date" class="input" /></td>
+              <td><input type="date" class="input" /></td>
+              <td>
+                <select name="" id="" class="input">
+                  <option value="">Choose an availble car</option>
+                  <option value="">Mat48975re</option>
+                  <option value="">Mat4689755e</option>
+                  <option value="">Mat4897raezre</option>
+                </select>
+              </td>
+              <td>
+                <button class="button confirm">confirm</button>
+                <button class="button delete">cancel</button>
+              </td>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>2024/2/3</td>
+              <td><input type="date" class="input" /></td>
+              <td><input type="date" class="input" /></td>
+              <td>
+                <select name="" id="" class="input">
+                  <option value="">Choose an availble car</option>
+                  <option value="">Mat48975re</option>
+                  <option value="">Mat4689755e</option>
+                  <option value="">Mat4897raezre</option>
+                </select>
+              </td>
+              <td>
+                <button class="button confirm">confirm</button>
+                <button class="button delete">cancel</button>
+              </td>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>2024/2/3</td>
+              <td><input type="date" class="input" /></td>
+              <td><input type="date" class="input" /></td>
+              <td>
+                <select name="" id="" class="input">
+                  <option value="">Choose an availble car</option>
+                  <option value="">Mat48975re</option>
+                  <option value="">Mat4689755e</option>
+                  <option value="">Mat4897raezre</option>
+                </select>
+              </td>
+              <td>
+                <button class="button confirm">confirm</button>
+                <button class="button delete">cancel</button>
+              </td>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>2024/2/3</td>
+              <td><input type="date" class="input" /></td>
+              <td><input type="date" class="input" /></td>
+              <td>
+                <select name="" id="" class="input">
+                  <option value="">Choose an availble car</option>
+                  <option value="">Mat48975re</option>
+                  <option value="">Mat4689755e</option>
+                  <option value="">Mat4897raezre</option>
+                </select>
+              </td>
+              <td>
+                <button class="button confirm">confirm</button>
+                <button class="button delete">cancel</button>
+              </td>
+            </tr>
+          </table>
+        </div>
       </section>
     </main>
   </body>
@@ -275,9 +305,15 @@
   section {
     padding: 20px;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
 
+  .search {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
   @media (width < 1500px) {
     a > span {
       display: none;

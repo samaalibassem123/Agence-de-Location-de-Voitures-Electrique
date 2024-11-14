@@ -135,53 +135,83 @@
         </a>
       </nav>
       <section class="drop-shadow-md">
-        <table class="tb">
-          <tr>
-            <th>Client_Mail</th>
-            <th>Client_Name</th>
-            <th>Client_Tel</th>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>
-              <button class="button delete">Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>
-              <button class="button delete">Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>
-              <button class="button delete">Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>
-              <button class="button delete">Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>exp1</td>
-            <td>
-              <button class="button delete">Delete</button>
-            </td>
-          </tr>
-        </table>
+        <div class="search">
+          <label for="">Search By Client Mail:</label>
+          <div>
+            <input
+              type="text"
+              placeholder="examp@gmail.com"
+              class="input"
+              style="width: 200px"
+            />
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-search"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.3-4.3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="tb">
+            <tr>
+              <th>Client_Mail</th>
+              <th>Client_Name</th>
+              <th>Client_Tel</th>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>
+                <button class="button delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>
+                <button class="button delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>
+                <button class="button delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>
+                <button class="button delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>exp1</td>
+              <td>
+                <button class="button delete">Delete</button>
+              </td>
+            </tr>
+          </table>
+        </div>
       </section>
     </main>
   </body>
@@ -199,7 +229,7 @@
   section {
     padding: 20px;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
 
   @media (width < 1500px) {
