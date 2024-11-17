@@ -179,20 +179,24 @@
     document.getElementById("carPrix").innerHTML = prix + "DT/par jour";
     document.getElementById("ModelImg").src = "../../../public/" + modelimg;
   }
+
+
   function CalcPrix() {
     const Jour = document.getElementById("jour").value;
     const Prix = GetParams("prix");
+
     if (Jour > 10) {
       alert("Imposible de louer une voiture plus que 10 jour");
       document.getElementById("jour").value = "";
       return;
     }
-    let Res = Jour * Prix;
+
+
     if (Jour === "") {
       document.getElementById("carPrix").innerHTML = Prix + "DT/par jour";
     } else {
-      document.getElementById("carPrix").innerHTML =
-        Res + " DT / Par " + Jour + " jour";
+      let Res = Jour * Prix;
+      document.getElementById("carPrix").innerHTML = Res + " DT / Par " + Jour + " jour";
     }
   }
   function HandleSubmit() {

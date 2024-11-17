@@ -19,7 +19,7 @@ body{
 
 
 /*Header style*/
-header {
+.header {
     padding: 20px;
     color: black;
     display: flex;
@@ -29,30 +29,30 @@ header {
     top: 0;
     z-index: 200;
   }
-  header > div {
+  .header > div {
     display: flex;
     align-items: end;
   }
-  header > div > span {
+  .header > div > span {
     font-size: small;
   }
-  .user-menu {
+  .header>.user-menu {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
   }
-  .user-menu > div {
+  .header>.user-menu > div {
     background-color: gainsboro;
     padding: 10px 15px;
     border-radius: 100%;
   }
   @media (width < 650px) {
-    header > div {
+    .header > div {
       flex-direction: column;
       align-items: start;
     }
-    header > div >span {
+    .header > div >span {
       visibility: hidden;
       display: none;
     }
@@ -81,7 +81,6 @@ header {
     align-items: center;
     text-decoration: none;
     gap: 10px;
-
     transition: all 0.2s ease-in-out;
     font-size: large;
     border: 1px solid rgba(0, 0, 0, 0.075);
@@ -152,7 +151,7 @@ header {
     cursor: pointer;
 }
 .button:hover{
-    opacity: 0.7
+    opacity: 0.7;
 }
 
 .delete {

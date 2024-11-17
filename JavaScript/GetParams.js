@@ -1,5 +1,6 @@
-const GetParams = (ParamName) => {
+function GetParams(ParamName) {
   const params = window.location.search.toString().split("&");
+
   for (let i = 0; i < params.length; i++) {
     let param = params[i].split("=");
     if (ParamName == param[0]) {
@@ -7,4 +8,4 @@ const GetParams = (ParamName) => {
     }
   }
   return null;
-};
+}
