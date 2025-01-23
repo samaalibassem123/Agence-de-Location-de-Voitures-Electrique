@@ -32,6 +32,7 @@ body{
   .header > div {
     display: flex;
     align-items: end;
+
   }
   .header > div > span {
     font-size: small;
@@ -48,10 +49,7 @@ body{
     border-radius: 100%;
   }
   @media (width < 650px) {
-    .header > div {
-      flex-direction: column;
-      align-items: start;
-    }
+ 
     .header > div >span {
       visibility: hidden;
       display: none;
@@ -124,9 +122,7 @@ body{
     width: 100%;
     font-size: small;
 }
-.input:hover{
-    box-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-}
+
 @media (width < 800px){
     .input{
         width: auto;

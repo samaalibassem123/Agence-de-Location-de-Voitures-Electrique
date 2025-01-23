@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>register</title>
     <link rel="stylesheet" href="../../../style/global.css" />
+    <script src="../../../JavaScript/Verif.js"></script>
   </head>
   <body>
     <div class="container">
@@ -37,7 +38,7 @@
         <div class="formulaire">
           <legend class="text-2xl">Register</legend>
           <hr />
-          <form action="" class="drop-shadow-sm">
+          <form action="" class="drop-shadow-sm" onsubmit="return verif()">
             <div class="username">
               <div>
                 <label class="text-sm font-semibold">Nom:</label>
@@ -67,6 +68,7 @@
                 class="input text-md"
                 placeholder="donnez votre numero de telephone"
                 required
+                id="tel"
               />
             </div>
             <div>
@@ -85,6 +87,7 @@
                 class="input text-md"
                 placeholder="*************"
                 required
+                id="pass"
               />
             </div>
             <div>
@@ -94,6 +97,7 @@
                 class="input text-md"
                 placeholder="*************"
                 required
+                id="cpass"
               />
             </div>
             <input
